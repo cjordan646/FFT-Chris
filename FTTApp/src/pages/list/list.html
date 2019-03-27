@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+        <ion-title>FFT</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div text-center>
+        <h3>Exercise Diary</h3>
+    </div>
+    <br>
+    <br>
+
+    <ion-list>
+        <button ion-item (click)="startRun()">
+                        <ion-icon name="walk" item-start></ion-icon>
+                        Start New Run
+                </button>
+
+        <button ion-item (click)="ViewRuns()">
+                        <ion-icon name="paper" item-start></ion-icon>
+                        View Previous Runs
+                 </button>
+    </ion-list>
+</ion-content>
