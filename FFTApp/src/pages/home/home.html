@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FFT</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div text-center>
+    <h3>Food & Steps Diary</h3>
+  </div>
+  <br>
+  <br>
+
+  <ion-list>
+    <button ion-item (click)="itemFoodLog()">
+      <ion-icon name="book" item-start></ion-icon>
+      View Current Day
+    </button>
+
+    <button ion-item (click)="itemDate()">
+      <ion-icon name="calendar" item-start></ion-icon>
+      Select a Date To View
+    </button>
+
+    <button ion-item (click)="itemSearch()">
+      <ion-icon name="add" item-start></ion-icon>
+      Add A Meal
+    </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,36 @@
+<!--
+  Generated template for the PrevRunPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FFT</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let workout of workouts">
+    <ion-card-header>{{ workout.calories }}</ion-card-header>
+    <ion-card-content>
+      <p>Activity: {{ workout.activityType }}</p>
+      <p>Duration: {{ workout.duration / 100 }} min</p>
+      <p>Date: {{ workout.startDate | date:'short' }}</p>
+      <p>Distance: {{ workout.miles }} miles</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let activity of activities">
+    <ion-card-header>{{ activity.path.length }} Waypoints</ion-card-header>
+    <ion-card-content>
+      <p>Start Time: {{ activity.startTime | date: 'dd/MM/yyyy, HH:mm:ss' }}</p>
+      <p>End Time: {{ activity.endTime | date: 'dd/MM/yyyy, HH:mm:ss' }}</p>
+      <p>Speed: {{ activity.speed }} m/s</p>
+      <p>Distance: {{ activity.dist }} meters</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
