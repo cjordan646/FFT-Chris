@@ -1,8 +1,0 @@
-{
-  "name": "FTTApp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular",
-  "id": "2b0ea519"
-}
